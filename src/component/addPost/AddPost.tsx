@@ -100,7 +100,8 @@ const PostForm: React.FC = () => {
                                 isDirty ?
                                     modal.confirm({
                                         title: "Cancel Add Post",
-                                        content: 'Are you want to cancel ?'
+                                        content: 'Are you want to cancel ?',
+                                        onOk: () => navigate('/')
                                     }) : navigate('/')
                             }}
                             disabled={submitting}>
